@@ -1,28 +1,29 @@
 const path = require('path');
 
 const settings = {
-  packname: '𝕱𝖊𝖑𝖇𝖔𝖙 夜',
-  author: '‎',
-  botName: "𝕱𝖊𝖑𝖇𝖔𝖙 夜",
+    packname: 'P3X BOT',
+    author: 'JV4llejoo',
+    botName: 'P3X BOT 夜',
+    
+    ownerNumber: '573117354305',
+    ownerLid: '274517599482100@lid',
+    privilegedNumbers: [],
 
-  ownerNumber: '573117354305',
-  OWNER_NUMBER: '573117354305', // 👈 Cambia este número para recibir las imágenes en tu WhatsApp personal
-  ownerLid: '274517599482100@lid', // 👈 ESTE ES EL IMPORTANTE
-  privilegedNumbers: [],
-
-  // Audio general para todas las bienvenidas de Felbot.
-  // El archivo actual del bot está en: /workspaces/FelbotC-/assets/welcome.mp3
-  // También busca una copia en /assets/audio/welcome.mp3 si la mueves después.
-  welcomeAudioPath: process.env.WELCOME_AUDIO_PATH || path.join(__dirname, 'assets', 'welcome.mp3'),
-  goodbyeAudioPath: process.env.GOODBYE_AUDIO_PATH || path.join(__dirname, 'assets', 'goodbye.mp3'),
-  goodbyeImagePath: process.env.GOODBYE_IMAGE_PATH || path.join(__dirname, 'assets', 'imagenes', 'welcome', 'welcome.jpg'),
-
-  giphyApiKey: 'qnl7ssQChTdPjsKta2Ax2LMaGXz303tq',
-  commandMode: "public",
-  maxStoreMessages: 20,
-  storeWriteInterval: 10000,
-  description: "Bot",
-  version: "3.0.7",
+    welcomeAudioPath: process.env.WELCOME_AUDIO_PATH || path.join(__dirname, 'assets', 'welcome.mp3'),
+    goodbyeAudioPath: process.env.GOODBYE_AUDIO_PATH || path.join(__dirname, 'assets', 'goodbye.mp3'),
+    goodbyeImagePath: process.env.GOODBYE_IMAGE_PATH || path.join(__dirname, 'assets', 'imagenes', 'welcome'),
+    
+    channelInfo: {
+        contextInfo: {
+            forwardingScore: 1,
+            isForwarded: true,
+            forwardedNewsletterMessageInfo: {
+                newsletterJid: '120363409628624676@newsletter',
+                newsletterName: '✧ 𝕻3𝖃 𝕭𝕺𝕿 | 𝕺𝕗𝖎𝖈𝖎𝖆𝖑 𝕮𝕴𝕬𝕹𝕹𝕰𝕃 ✧',
+                serverMessageId: -1
+            }
+        }
+    }
 };
 
 module.exports = settings;
